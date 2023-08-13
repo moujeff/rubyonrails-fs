@@ -121,11 +121,11 @@
               </button>
               <ul id="dropdown-auth" class="hidden py-2 space-y-2">
                 <li>
-                <% if user_signed_in? %>
-                  <div>  <%= current_user.email %> </div>
-                  <%= button_to "Sign out", destroy_user_session_path, method: :delete, data: {turbo: 'false'} %>
+                <% if admin_signed_in? %>
+                  <div>  <%= current_admin.email %> </div>
+                  <%= button_to "Sign out", destroy_admin_session_path, method: :delete, data: {turbo: 'false'} %>
                 <% else %>
-                  <%= button_to "Sign in", new_user_session_path %>
+                  <%= button_to "Sign in", new_admin_session_path %>
                 <% end %>
                 </li>
                 <li>
