@@ -1,3 +1,4 @@
 fr:
   welcome:
-    payment: "Payment pour outils de developement"
+    payment: "bienvenue nouveau utilisateur "
+    welcomeText: "Entrepries autour du monde utilise flowbite pour simplifier leur procedure de paiement"

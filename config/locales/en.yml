@@ -32,4 +32,5 @@
 en:
   hello: "Hello world"
   welcome:
-    payment: "Payments tool for software companies"
+    payment: "welcome new user "
+    welcomeText: "From checkout to global sales tax compliance, companies around the world use Flowbite to simplify their payment stack."
