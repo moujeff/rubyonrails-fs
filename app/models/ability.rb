@@ -3,24 +3,15 @@
 class Ability
   include CanCan::Ability
 
-  def initialize(user)
-    class Ability
-      include CanCan::Ability
+  def initialize(admin)
 
-      def initialize(user)
-        can :read, product, published: true
 
-        return unless user.present?
+    #return unless admin.present?  # additional permissions for logged in users (they can read their own posts)
+    #can :read, Product, admin: admin
 
-        can :read, product, user: user
-        can :update, product, user: user
 
-        return unless user.admin?
-
-        can :manage, product
-      end
-    end
-
+  end
+end
     # Define abilities for the user here. For example:
     #
     #   return unless user.present?
@@ -45,5 +36,3 @@ class Ability
     #
     # See the wiki for details:
     # https://github.com/CanCanCommunity/cancancan/blob/develop/docs/define_check_abilities.md
-  end
-end

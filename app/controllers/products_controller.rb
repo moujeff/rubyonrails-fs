@@ -1,15 +1,15 @@
 class ProductsController < ApplicationController
+  load_and_authorize_resource
   before_action :set_product, only: %i[ show edit update destroy ]
-
   # GET /products or /products.json
   def index
-    @products = Product.all
-    @product = Product
+    @products = current_admin.products
+
   end
 
   # GET /products/1 or /products/1.json
   def show
-    @products = Product.all
+
   end
 
   # GET /products/new
