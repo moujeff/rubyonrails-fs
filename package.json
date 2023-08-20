@@ -5,6 +5,7 @@
     "@hotwired/stimulus": "^3.2.1",
     "@hotwired/turbo-rails": "^7.3.0",
     "autoprefixer": "^10.4.14",
+    "datatables.net-dt": "^1.13.6",
     "esbuild": "^0.18.18",
     "flowbite": "^1.8.1",
     "postcss": "^8.4.27",

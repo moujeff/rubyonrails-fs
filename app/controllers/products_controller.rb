@@ -1,10 +1,9 @@
 class ProductsController < ApplicationController
-  load_and_authorize_resource
   before_action :set_product, only: %i[ show edit update destroy ]
+
   # GET /products or /products.json
   def index
     @products = current_admin.products
-
   end
 
   # GET /products/1 or /products/1.json
@@ -25,7 +24,7 @@ class ProductsController < ApplicationController
   # POST /products or /products.json
   def create
     @product = Product.new(product_params)
-    @product.admin_id = current_admin.id
+    @product.admin = current_admin
     respond_to do |format|
       if @product.save
         format.html { redirect_to product_url(@product), notice: "Product was successfully created." }
