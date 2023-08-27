@@ -21,7 +21,11 @@
 
   <%= render partial: 'admin/dashboard/sidebar' %>
 
-  <%= yield %>
+  <div id="main-content" class="relative w-full h-full overflow-y-auto lg:ml-64 dark:bg-gray-900">
+    <main>
+      <%= yield %>
+    </main>
+  </div>
 
 </div>
 

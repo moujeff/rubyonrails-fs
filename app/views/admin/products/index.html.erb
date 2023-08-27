@@ -2,11 +2,24 @@
 
 
 
-<div id="products">
-
-    <%= render partial: 'product' %>
-
-
+<div id="products" class="p-4">
+  <%= render partial: 'product' %>
 </div>
 
+<script>
+    $('#products-datatable').dataTable({
+        "serverSide": true,
+        "ajax": $('#products-datatable').data('source'),
 
+        "pagingType": "full_numbers",
+        responsive: true,
+        "columns": [
+            {data: "id"},
+            {data: "name"},
+            {data: "category"},
+            {data: "description"},
+            {data: "price"}
+        ]
+
+    });
+</script>
