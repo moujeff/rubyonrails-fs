@@ -7,3 +7,4 @@ class Admin::DashboardController < AdminController
     @product.admin = current_user
   end
 end
+

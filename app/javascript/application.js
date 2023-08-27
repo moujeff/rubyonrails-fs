@@ -1,9 +1,14 @@
 // Entry point for the build script in your package.json
+
 import "@hotwired/turbo-rails"
 import "./controllers"
-import DataTable from 'datatables.net-dt';
-import 'datatables.net-responsive-dt';
+import "flowbite/dist/flowbite.turbo.js";
+import jQuery from 'jquery'
+window.jQuery = jQuery
+window.$ = jQuery
+import 'datatables.net-dt'
 
-let table = new DataTable('#product-table', {
-    responsive: true
-});
+
+
+
+

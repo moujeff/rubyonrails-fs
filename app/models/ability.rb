@@ -4,8 +4,8 @@ class Ability
   include CanCan::Ability
 
   def initialize(admin)
-    can :read, Product
 
+    return unless admin.present?
     can :manage, Product, admin_id: admin.id if admin
     
   end
