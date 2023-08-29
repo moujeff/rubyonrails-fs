@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f74cf0b9-8961-420f-a164-f47086c077ad" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/projectone.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/projectone.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/admin/types_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin/types_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/admin.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/admin.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/products/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/products/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/product.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/product.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/products/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/products/_form.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
     </list>
@@ -77,7 +78,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/fsdev/projectone&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/fsdev/Downloads/flambosoftintern-main&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -95,9 +96,9 @@
       <recent name="$PROJECT_DIR$/app" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/controllers/admin" />
       <recent name="$PROJECT_DIR$/app/views/admin" />
       <recent name="$PROJECT_DIR$/app/controllers" />
-      <recent name="$PROJECT_DIR$/app/controllers/admin" />
       <recent name="$PROJECT_DIR$/app/assets" />
       <recent name="$PROJECT_DIR$/app/views/admin/dashboard" />
     </key>
@@ -235,7 +236,8 @@
       <workItem from="1693055458964" duration="5606000" />
       <workItem from="1693082885513" duration="652000" />
       <workItem from="1693266091570" duration="2418000" />
-      <workItem from="1693296711899" duration="876000" />
+      <workItem from="1693296711899" duration="3794000" />
+      <workItem from="1693304079910" duration="4284000" />
     </task>
     <servers />
   </component>
@@ -257,7 +259,7 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/projectone@projectone.rcov" NAME="projectone Coverage Results" MODIFIED="1693296725745" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="projectone" />
+    <SUITE FILE_PATH="coverage/projectone@projectone.rcov" NAME="projectone Coverage Results" MODIFIED="1693306988298" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="projectone" />
     <SUITE FILE_PATH="coverage/projectone@foreman_start.rcov" NAME="foreman start Coverage Results" MODIFIED="1692725442170" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="projectone" />
   </component>
 </project>

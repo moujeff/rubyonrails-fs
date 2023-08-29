@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_08_29_001025) do
+ActiveRecord::Schema[7.0].define(version: 2023_08_29_111303) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -33,6 +33,13 @@ ActiveRecord::Schema[7.0].define(version: 2023_08_29_001025) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "categories_products", id: false, force: :cascade do |t|
+    t.bigint "product_id", null: false
+    t.bigint "category_id", null: false
+    t.index ["category_id", "product_id"], name: "index_categories_products_on_category_id_and_product_id"
+    t.index ["product_id", "category_id"], name: "index_categories_products_on_product_id_and_category_id"
+  end
+
   create_table "products", force: :cascade do |t|
     t.string "name"
     t.text "description"
@@ -41,6 +48,13 @@ ActiveRecord::Schema[7.0].define(version: 2023_08_29_001025) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "admin_id"
+  end
+
+  create_table "products_types", id: false, force: :cascade do |t|
+    t.bigint "product_id", null: false
+    t.bigint "type_id", null: false
+    t.index ["product_id", "type_id"], name: "index_products_types_on_product_id_and_type_id"
+    t.index ["type_id", "product_id"], name: "index_products_types_on_type_id_and_product_id"
   end
 
   create_table "tasks", force: :cascade do |t|

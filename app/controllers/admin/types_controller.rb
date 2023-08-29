@@ -38,7 +38,7 @@ class Admin::TypesController < AdminController
   def update
     respond_to do |format|
       if @type.update(type_params)
-        format.html { redirect_to type_url(@type), notice: "Type was successfully updated." }
+        format.html { redirect_to admin_type_url(@type), notice: "Type was successfully updated." }
         format.json { render :show, status: :ok, location: @type }
       else
         format.html { render :edit, status: :unprocessable_entity }
