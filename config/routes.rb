@@ -4,10 +4,12 @@ Rails.application.routes.draw do
 
   namespace :admin do
     resources :products
+    resources :types
     root "dashboard#main_page"
   end
   resources :tests
   resources :tasks
+
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")

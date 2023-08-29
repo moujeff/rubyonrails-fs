@@ -4,4 +4,6 @@ class Admin < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
   has_many :products
+  has_and_belongs_to_many :types
+
 end
